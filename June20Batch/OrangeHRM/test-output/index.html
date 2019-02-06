@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-OrangeHrm">
+              <span class="suite-name border-failed">OrangeHrm</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-OrangeHrm">
+                    <span>E:\June20Batch\OrangeHRM\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-OrangeHrm">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-OrangeHrm">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-OrangeHrm">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-OrangeHrm">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-OrangeHrm">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-OrangeHrm">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 6 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHrm" class="hide-methods failed suite-OrangeHrm"> (hide)</a> <!-- hide-methods failed suite-OrangeHrm -->
+                      <a href="#" panel-name="suite-OrangeHrm" class="show-methods failed suite-OrangeHrm"> (show)</a> <!-- show-methods failed suite-OrangeHrm -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHrm">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.AddEmployee" hash-for-method="addEmployeeTest">addEmployeeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.AddEmployee" hash-for-method="addEmployeeTest">addEmployeeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.Login" hash-for-method="loginTest(firefox)">loginTest(firefox)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.Login" hash-for-method="loginTest(chrome)">loginTest(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.Logout" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.Logout" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHrm -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-OrangeHrm" class="hide-methods skipped suite-OrangeHrm"> (hide)</a> <!-- hide-methods skipped suite-OrangeHrm -->
+                      <a href="#" panel-name="suite-OrangeHrm" class="show-methods skipped suite-OrangeHrm"> (show)</a> <!-- show-methods skipped suite-OrangeHrm -->
+                    </span>
+                    <div class="method-list-content skipped suite-OrangeHrm">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.TakingScreenshot" hash-for-method="screenshotTest">screenshotTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-OrangeHrm" title="com.orangehrm.testsuite.TakingScreenshot" hash-for-method="screenshotTest">screenshotTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-OrangeHrm -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-OrangeHrm" class="panel OrangeHrm">
+          <div class="suite-OrangeHrm-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testsuite.AddEmployee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeTest">
+                  </a> <!-- addEmployeeTest -->
+                  <span class="method-name">addEmployeeTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;menu_pim_viewPimModule&apos;]/b&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 1.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;menu_pim_viewPimModule&apos;]/b}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at com.orangehrm.pageclasses.Menu.pim(Menu.java:18)
+	at com.orangehrm.testsuite.AddEmployee.addEmployeeTest(AddEmployee.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;menu_pim_viewPimModule&apos;]/b&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeTest">
+                  </a> <!-- addEmployeeTest -->
+                  <span class="method-name">addEmployeeTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;menu_pim_viewPimModule&apos;]/b&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 1.39 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;menu_pim_viewPimModule&apos;]/b}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at com.orangehrm.pageclasses.Menu.pim(Menu.java:18)
+	at com.orangehrm.testsuite.AddEmployee.addEmployeeTest(AddEmployee.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;menu_pim_viewPimModule&apos;]/b&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHrm-class-failed -->
+          <div class="suite-OrangeHrm-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testsuite.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Welcome Admin&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 992 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=link text, value=Welcome Admin}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:418)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at com.orangehrm.pageclasses.Menu.logout(Menu.java:71)
+	at com.orangehrm.testsuite.Logout.logout(Logout.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Welcome Admin&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Welcome Admin&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 1.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=link text, value=Welcome Admin}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:418)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.click(Unknown Source)
+	at com.orangehrm.pageclasses.Menu.logout(Menu.java:71)
+	at com.orangehrm.testsuite.Logout.logout(Logout.java:18)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Welcome Admin&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHrm-class-failed -->
+          <div class="suite-OrangeHrm-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.testsuite.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(firefox)">
+                  </a> <!-- loginTest(firefox) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(firefox)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;txtUsername&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 25.23 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=id, value=txtUsername}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at com.orangehrm.pageclasses.LoginPage.loginPanel(LoginPage.java:15)
+	at com.orangehrm.testsuite.Login.loginTest(Login.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;txtUsername&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(chrome)">
+                  </a> <!-- loginTest(chrome) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(chrome)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;txtUsername&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 20.44 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=id, value=txtUsername}
+Session ID: 58914ba8-173b-4d0e-b4db-48d8d17e07f2
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=58914ba8-173b-4d0e-b4db-48d8d17e07f2, version=40.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
+	at com.orangehrm.pageclasses.LoginPage.loginPanel(LoginPage.java:15)
+	at com.orangehrm.testsuite.Login.loginTest(Login.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;txtUsername&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/Sai/AppData/Local/Temp/anonymous3121312488318956189webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHrm-class-failed -->
+          <div class="suite-OrangeHrm-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.orangehrm.testsuite.TakingScreenshot</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshotTest">
+                  </a> <!-- screenshotTest -->
+                  <span class="method-name">screenshotTest</span>
+                  <div class="stack-trace">org.testng.SkipException: Scrrenshot test skipped
+	at com.orangehrm.utilty.CheckRunMode.runMode(CheckRunMode.java:14)
+	at com.orangehrm.testsuite.TakingScreenshot.screenshotTest(TakingScreenshot.java:12)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="screenshotTest">
+                  </a> <!-- screenshotTest -->
+                  <span class="method-name">screenshotTest</span>
+                  <div class="stack-trace">org.testng.SkipException: Scrrenshot test skipped
+	at com.orangehrm.utilty.CheckRunMode.runMode(CheckRunMode.java:14)
+	at com.orangehrm.testsuite.TakingScreenshot.screenshotTest(TakingScreenshot.java:12)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHrm-class-skipped -->
+        </div> <!-- panel OrangeHrm -->
+        <div panel-name="test-xml-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\June20Batch\OrangeHRM\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;OrangeHrm&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;On Firefox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.Login&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.AddEmployee&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.TakingScreenshot&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.Logout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- On Firefox --&gt;
+  &lt;test name=&quot;On Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.Login&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.AddEmployee&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.TakingScreenshot&quot;/&gt;
+      &lt;class name=&quot;com.orangehrm.testsuite.Logout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- On Chrome --&gt;
+&lt;/suite&gt; &lt;!-- OrangeHrm --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for OrangeHrm</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">On Firefox (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">On Chrome (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for OrangeHrm</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for OrangeHrm</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_OrangeHrm');
+function tableData_OrangeHrm() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'com.orangehrm.testsuite.Login')
+data.setCell(0, 3, 52044);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.orangehrm.testsuite.Login')
+data.setCell(1, 3, 51265);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logout')
+data.setCell(2, 2, 'com.orangehrm.testsuite.Logout')
+data.setCell(2, 3, 5116);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logout')
+data.setCell(3, 2, 'com.orangehrm.testsuite.Logout')
+data.setCell(3, 3, 5100);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addEmployeeTest')
+data.setCell(4, 2, 'com.orangehrm.testsuite.AddEmployee')
+data.setCell(4, 3, 1761);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addEmployeeTest')
+data.setCell(5, 2, 'com.orangehrm.testsuite.AddEmployee')
+data.setCell(5, 3, 1714);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'screenshotTest')
+data.setCell(6, 2, 'com.orangehrm.testsuite.TakingScreenshot')
+data.setCell(6, 3, 87);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'screenshotTest')
+data.setCell(7, 2, 'com.orangehrm.testsuite.TakingScreenshot')
+data.setCell(7, 3, 78);
+window.suiteTableData['OrangeHrm']= { tableData: data, tableDiv: 'times-div-OrangeHrm'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-OrangeHrm">
+              </div> <!-- times-div-OrangeHrm -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for OrangeHrm</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-OrangeHrm" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.AddEmployee</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployeeTest</span>
+                <span class="method-start">51270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployeeTest</span>
+                <span class="method-start">52047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.TakingScreenshot</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">screenshotTest</span>
+                <span class="method-start">52988 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">53078 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.TakingScreenshot</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">screenshotTest</span>
+                <span class="method-start">53811 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.orangehrm.testsuite.Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logout</span>
+                <span class="method-start">53892 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

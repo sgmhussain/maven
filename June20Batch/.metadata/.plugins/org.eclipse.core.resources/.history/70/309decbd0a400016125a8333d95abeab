@@ -1,0 +1,15 @@
+package day8;
+
+public class HeadlessTesting2_PhantomJS {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.setProperty("phantojs.binary.path","c:\\phantomjs.exe");
+		
+		Phnatomjs
+
+	}
+
+}

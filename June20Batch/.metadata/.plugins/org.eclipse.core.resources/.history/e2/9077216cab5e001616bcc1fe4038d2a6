@@ -1,0 +1,14 @@
+package com.orangehrm.utilty;
+
+import org.testng.SkipException;
+
+public class CheckRunMode {
+
+	public void runMode(String path,int sheetno,rowno,colno,String msg)
+	{
+		
+	}
+	
+
+}
+

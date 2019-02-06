@@ -1,0 +1,14 @@
+<suite name="End to end testing on Newtours">
+  <test name="Flight Ticket Bookin Test">
+    <classes>
+		<class name="day23.testsuite.Login"/>
+		<class name="day23.testsuite.FlightDetails"/>
+		<class name="day23.testsuite.SelectFlight"/>
+		<class name="day23.testsuite.BookFlight"/>
+		<class name="day23.testsuite.FlightConfirmation"/>
+      
+      
+      
+    </classes>
+  </test> 
+</suite> 

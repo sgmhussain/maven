@@ -1,0 +1,17 @@
+package com.orangehrm.testsuite;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.orangehrm.pageclasses.Menu;
+
+public class Logout  extends BaseClass{
+	
+	@Test
+	public void logout()
+	{
+		Menu menu=PageFactory.initElements(driver,Menu.class);
+		menu.logout();
+	}
+
+}

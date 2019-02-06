@@ -1,0 +1,16 @@
+<suite name="Cross Browser Testing"  parallel="tests">
+  <test name="On Chrome">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="os" value="Mac"
+    <classes>
+      <class name="day25.DatadrivenTestingOnGrid"/>
+    </classes>
+  </test>  
+  <test name="On Firefox">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="day25.DatadrivenTestingOnGrid"/>
+    </classes>
+  </test>
+   
+</suite> 
